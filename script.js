@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { title: "Treinamento 2", thumbnail: "thumbs/treinamento2.jpg", src: "videos/treinamento2.mp4", category: "Desenvolvimento", description: "Aprenda conceitos fundamentais de desenvolvimento web." },
         { title: "Treinamento 3", thumbnail: "thumbs/treinamento3.jpg", src: "videos/treinamento3.mp4", category: "Segurança", description: "Dicas de segurança digital para proteger seus dados." },
         { title: "Treinamento 4", thumbnail: "thumbs/treinamento4.jpg", src: "videos/treinamento4.mp4", category: "RH", description: "Como melhorar o ambiente organizacional na empresa." },
-        { title: "Treinamento 5", thumbnail: "videos/thumb/MTA_ San Andreas 19_01_2025 04_41_38.png", src: "videos/2025-01-24 20-08-21.mp4", category: "Desenvolvimento", description: "Técnicas avançadas de programação para desenvolvedores." }
+        { title: "Treinamento 5", thumbnail: "videos/thumb/MTA_ San Andreas 19_01_2025 04_41_38.png", src: "videos/2025-01-24 20-08-21.mp4", category: "Desenvolvimento", description: "Técnicsas avançadas de programação para desenvolvedores." }
     ];
 
     const videoContainer = document.getElementById("videoContainer");
