@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistir Vídeo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Assistindo ao Vídeo</h1>
+    </header>
+
+    <main>
+        <div class="video-player">
+            <video controls id="videoPlayer">
+                Seu navegador não suporta vídeos.
+            </video>
+            <h2 id="videoTitle"></h2>
+            <p id="videoDescription"></p>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const videoSrc = urlParams.get("src");
+            const videoTitle = urlParams.get("title");
+            const videoDescription = urlParams.get("desc");
+
+            if (videoSrc) {
+                document.getElementById("videoPlayer").src = videoSrc;
+            }
+            if (videoTitle) {
+                document.getElementById("videoTitle").innerText = videoTitle;
+            }
+            if (videoDescription) {
+                document.getElementById("videoDescription").innerText = videoDescription;
+            }
+        });
+    </script>
+
+</body>
+</html>
